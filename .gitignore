@@ -1,0 +1,10 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Package Management
+/node_modules/
+src/node_modules/
+src/npm-debug.log.*
+npm-debug.log
+/npm-debug.log*

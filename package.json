@@ -1,0 +1,21 @@
+{
+  "name": "librum-hugo-theme",
+  "version": "0.1.0",
+  "description": "Basic Hugo theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrewers/Librum.git"
+  },
+  "keywords": [
+    "hugo",
+    "theme"
+  ],
+  "author": "Marek Rewers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrewers/Librum/issues",
+  },
+  "homepage": {
+    "url": "https://github.com/mrewers/Librum"
+  }
+}

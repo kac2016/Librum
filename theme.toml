@@ -3,9 +3,9 @@
 
 name = 'Librum'
 license = 'MIT'
-licenselink = 'https://github.com/mrewers/librum/blob/master/LICENSE.md'
+licenselink = 'https://github.com/mrewers/Librum/blob/master/LICENSE.md'
 description = ''
-homepage = 'https://github.com/mrewers/librum'
+homepage = 'https://github.com/mrewers/Librum'
 tags = []
 features = []
 min_version = "0.32.4"
