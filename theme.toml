@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = 'Librum'
+license = 'MIT'
+licenselink = 'https://github.com/mrewers/librum/blob/master/LICENSE.md'
+description = ''
+homepage = 'https://github.com/mrewers/librum'
+tags = []
+features = []
+min_version = "0.32.4"
+
+[author]
+  name = 'Marek Rewers'
+  homepage = 'https://github.com/mrewers'
