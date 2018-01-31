@@ -1,8 +1,9 @@
-{{ partial "header.html" . }}
-
-{{ range .Site.RegularPages }}
-  <a href="{{ .Permalink }}">{{ .Title }}</a>
-  <br>
+{{ define "main" }}
+  <div class="content">
+    {{ range .Site.RegularPages }}
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <br>
+    {{ end }}
+  </div>
+  <div class="push"></div>
 {{ end }}
-
-{{ partial "footer.html" . }}

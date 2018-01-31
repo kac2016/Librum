@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     {{ .Hugo.Generator }}
 
+    <link href='{{ "dist/main.css" | absURL }}' rel='stylesheet' type="text/css" />
+
     {{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
     {{- template "_internal/opengraph.html" . -}}
     {{- template "_internal/google_news.html" . -}}
@@ -29,7 +31,6 @@
     </main>
 
     {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
-    {{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
 
   </body>
 </html>

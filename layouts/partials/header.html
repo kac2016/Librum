@@ -1,7 +1,9 @@
-{{ $header_image := images/book_shelf.jpeg }}
+{{ $header_image := .Param "featured_image" | default "images/book_shelf.jpeg" }}
 
-<header style="background-image: url('{{ $header_image }}');">
-  <h1 class="site-title">
-    {{ .Site.Title }}
-  </h1>
+<header class="primary_header" style="background-image: url('{{ $header_image }}');">
+  <div class="title_container">
+    <h1 class="site-title">
+      {{ .Site.Title }}
+    </h1>
+  </div>
 </header>

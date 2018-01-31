@@ -13,9 +13,15 @@
   "author": "Marek Rewers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mrewers/Librum/issues",
+    "url": "https://github.com/mrewers/Librum/issues"
   },
   "homepage": {
     "url": "https://github.com/mrewers/Librum"
+  },
+  "scripts": {
+    "build_less": "lessc src/styles/style.less static/dist/main.css"
+  },
+  "dependencies": {
+    "less": "^2.7.3"
   }
 }

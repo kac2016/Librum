@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700&css);
+/* Globals */
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.content {
+  padding: 1rem;
+  margin: 0 auto -100px;
+  min-height: 100%;
+}
+.push {
+  padding: 0;
+  margin: 0;
+  height: 100px;
+}
+/* Elements */
+.primary_header {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem 2rem;
+  margin: 0 auto;
+}
+.title_container {
+  border: solid 5px #ffffff;
+  margin: 0 30%;
+}
+.site-title {
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(54, 115, 173, 0.6);
+  padding: 2rem;
+  margin: 0 auto;
+}
+.primary_footer {
+  background-color: #3673ad;
+  padding: 3rem;
+}
