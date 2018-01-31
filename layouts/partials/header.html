@@ -1,10 +1,7 @@
-<!DOCTYPE HTML>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ .Title }} | {{ .Site.Title }}</title>
-    {{ .Hugo.Generator }}
-  </head>
-  <body>
-    <p>Header</p>
-    <main>
+{{ $header_image := images/book_shelf.jpeg }}
+
+<header style="background-image: url('{{ $header_image }}');">
+  <h1 class="site-title">
+    {{ .Site.Title }}
+  </h1>
+</header>
