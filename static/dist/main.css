@@ -9,9 +9,18 @@ body {
   height: 100%;
 }
 .content {
-  padding: 1rem;
+  padding: 0 1rem;
   margin: 0 auto -100px;
   min-height: 100%;
+  max-width: 1300px;
+  background-color: #3673ad;
+}
+.page_content {
+  width: 66%;
+  background-color: #FFFFFF;
+  margin: 0 -1rem;
+  padding: 1rem;
+  padding-right: 0;
 }
 .push {
   padding: 0;
@@ -37,7 +46,19 @@ body {
   padding: 2rem;
   margin: 0 auto;
 }
+.sidebar {
+  width: 30%;
+  display: block;
+  float: right;
+}
 .primary_footer {
-  background-color: #3673ad;
-  padding: 3rem;
+  background-color: #103455;
+  padding: 3rem 8rem;
+  max-width: 1300px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.footer_text {
+  color: #FFFFFF;
 }

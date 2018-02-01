@@ -19,7 +19,7 @@
     "url": "https://github.com/mrewers/Librum"
   },
   "scripts": {
-    "build_less": "lessc src/styles/style.less static/dist/main.css"
+    "build_css": "lessc src/styles/style.less static/dist/main.css"
   },
   "dependencies": {
     "less": "^2.7.3"

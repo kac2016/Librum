@@ -1,9 +1,13 @@
 {{ define "main" }}
   <div class="content">
-    {{ range .Site.RegularPages }}
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-      <br>
-    {{ end }}
-  </div>
-  <div class="push"></div>
+
+    {{ partial "sidebar.html" . }}
+
+    <div class="page_content">
+      {{ range .Site.RegularPages }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <br>
+      {{ end }}
+    </div>
+
 {{ end }}

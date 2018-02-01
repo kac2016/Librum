@@ -1,5 +1,5 @@
 ---
-title: "Ananke: a Hugo Theme"
+title: "Librum: For Books' Sake"
 featured_image: '/images/book_shelf.jpeg'
 description: "The last theme you'll ever need. Maybe."
 ---
