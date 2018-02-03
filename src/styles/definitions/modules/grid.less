@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 2px;
+  align-items: center;
+  align-content: center;
+
+  &.two_column_grid {
+    grid-template-columns: 50% 50%
+  }
+
+  &.three_column_grid {
+    grid-gap: 1rem;
+    grid-template-columns: 31.5% 31.5% 31.5%
+  }
+}
