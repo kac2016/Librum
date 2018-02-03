@@ -1,6 +1,5 @@
 ---
 title: "Librum: For Books' Sake"
 featured_image: '/images/book_shelf.jpeg'
-description: "The last theme you'll ever need. Maybe."
+description: "We've got you covered"
 ---
-Welcome to my blog with some of my work in progress. I've been working on this book idea. You can read some of the chapters below.

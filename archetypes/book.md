@@ -1,6 +1,9 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 author: ""
-host:
-date: {{ .Date }}
+image: ""
+pages: ""
+host: ""
+date: ""
+buy_link: ""
 ---
