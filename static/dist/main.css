@@ -1,31 +1,72 @@
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700&css);
 /* Globals */
 html {
+  margin: 0;
   height: 100%;
 }
 body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: #d6d7d9;
+}
+.main {
+  min-height: calc(30vh);
 }
 .content {
   padding: 0 1rem;
-  margin: 0 auto -100px;
-  min-height: 100%;
+  margin: 0 auto;
   max-width: 1300px;
   background-color: #3673ad;
+  border-left: solid 1px #5b616b;
+  border-right: solid 1px #5b616b;
+  box-shadow: 2px 2px 2px #323a45;
 }
 .page_content {
-  width: 66%;
+  width: 68.6%;
   background-color: #FFFFFF;
   margin: 0 -1rem;
   padding: 1rem;
   padding-right: 0;
+  border-right: solid 1px #5b616b;
 }
 .push {
   padding: 0;
   margin: 0;
   height: 100px;
+}
+html,
+body,
+p {
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lora', serif;
+}
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.17em;
+}
+h4 {
+  font-size: 1.12em;
+}
+h5 {
+  font-size: .83em;
+}
+h6 {
+  font-size: .75em;
+}
+a {
+  text-decoration: none;
 }
 /* Elements */
 .primary_header {
@@ -45,20 +86,65 @@ body {
   background-color: rgba(54, 115, 173, 0.6);
   padding: 2rem;
   margin: 0 auto;
+  font-family: 'Lora', serif;
 }
 .sidebar {
   width: 30%;
   display: block;
   float: right;
 }
+.sidebar_nav {
+  margin: 0 -1rem;
+  border: solid 1px #5b616b;
+}
+.nav_item {
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #103455;
+  box-shadow: 2px 2px 2px #323a45;
+}
+.nav_item:active {
+  background-color: #7e5a3f;
+}
+.card {
+  text-align: center;
+}
+.card_author {
+  font-size: .8rem;
+  color: #5b616b;
+}
+.thumbnail {
+  height: 250px;
+}
 .primary_footer {
   background-color: #103455;
-  padding: 3rem 8rem;
-  max-width: 1300px;
+  padding: 1rem 0;
+  height: 100px;
   width: 100%;
+  left: 0;
   bottom: 0;
-  position: absolute;
+  position: relative;
+}
+.footer_text_container {
+  max-width: 1300px;
+  padding-top: 1.5rem;
+  margin: 0 auto;
 }
 .footer_text {
   color: #FFFFFF;
+}
+/* Modules */
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 2px;
+  align-items: center;
+  align-content: center;
+}
+.grid.two_column_grid {
+  grid-template-columns: 50% 50%;
+}
+.grid.three_column_grid {
+  grid-gap: 1rem;
+  grid-template-columns: 31.5% 31.5% 31.5%;
 }

@@ -1,4 +1,5 @@
 html {
+  margin: 0;
   height: 100%;
 }
 
@@ -6,22 +7,30 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: @color-gray-lighter;
+}
+
+.main {
+  min-height: calc(100vh - 70px);
 }
 
 .content {
   padding: 0 1rem;
-  margin: 0 auto -100px;
-  min-height: 100%;
+  margin: 0 auto;
   max-width: 1300px;
   background-color: @color-primary;
+  border-left: solid 1px @color-gray;
+  border-right: solid 1px @color-gray;
+  box-shadow: 2px 2px 2px @color-gray-dark;
 }
 
 .page_content {
-  width: 66%;
+  width: 68.6%;
   background-color: #FFFFFF;
   margin: 0 -1rem;
   padding: 1rem;
   padding-right: 0;
+  border-right: solid 1px @color-gray;
 }
 
 .push {

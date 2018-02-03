@@ -4,10 +4,21 @@
     {{ partial "sidebar.html" . }}
 
     <div class="page_content">
-      {{ range .Site.RegularPages }}
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-        <br>
-      {{ end }}
+      <div class="grid three_column_grid">
+        {{ range .Site.RegularPages }}
+          <div class="card">
+            <div class="card_image">
+              <img class="thumbnail" src="/images/{{ .Params.image }}">
+            </div>
+            <div class="card_content">
+              <a class="card_header" href="{{ .Permalink }}">{{ .Params.title }}</a>
+              <div class="card_meta">
+                <p class="card_author">{{ .Params.author }}</p>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
     </div>
 
 {{ end }}
