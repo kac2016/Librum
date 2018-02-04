@@ -1,9 +1,9 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 
 <h1>{{ .Title }}</h1>
 
 {{ range .Pages }}
-  <p>{{ .Title }}</p>
+  <p>{{ .Title }} | {{ .Date.Format "Jan 2, 2006" }} </p>
 {{ end }}
 
-{{ partial "footer.html" . }}
+{{ end }}
