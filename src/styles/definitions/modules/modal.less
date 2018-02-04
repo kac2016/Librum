@@ -1,0 +1,77 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: fade(@color-primary-light, 30%);
+}
+
+.modal_container {
+  width: 45%;
+  margin: 10% auto;
+  text-align: left;
+  border: solid 1px @color-gray;
+  border-radius: 5px;
+  background-color: @color-gray-lightest;
+}
+
+.modal_header {
+  display: block;
+  margin: -1rem -1rem 1rem;
+  padding: 1rem;
+  border-bottom: solid 2px @color-gray;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: @color-gray-lighter;
+}
+
+.modal_close {
+  float: right;
+  cursor: pointer;
+}
+
+.modal_container {
+  padding: 1rem;
+}
+
+.modal_content_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal_image {
+  height: 250px;
+  padding-right: 1rem;
+}
+
+.modal_meta {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+}
+
+.icon_button {
+  text-align: center;
+  width: 150px;
+  border: solid 1px @color-gray;
+  border-radius: 5px;
+  padding: .5rem;
+  background-color: @color-tertiary;
+
+  &:hover {
+    transform: translate(-2px, -2px);
+  }
+}
+
+.button_text {
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.book_icon {
+  vertical-align: text-top;
+  padding-left: .3rem;
+}

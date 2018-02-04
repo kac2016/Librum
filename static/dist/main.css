@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700&css);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:900&css);
+@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow:400,600&css);
 /* Globals */
 html {
   margin: 0;
@@ -39,13 +41,15 @@ html,
 body,
 p {
   font-size: 18px;
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #212121;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Lora', serif;
+  font-family: 'Playfair Display', serif;
 }
 h1 {
   font-size: 2.2rem;
@@ -86,7 +90,7 @@ a {
   background-color: rgba(54, 115, 173, 0.6);
   padding: 2rem;
   margin: 0 auto;
-  font-family: 'Lora', serif;
+  font-family: 'Playfair Display', serif;
 }
 .sidebar {
   width: 30%;
@@ -105,6 +109,9 @@ a {
 }
 .nav_item:active {
   background-color: #7e5a3f;
+}
+.nav_item:hover {
+  background-color: #6aab9d;
 }
 .card {
   text-align: center;
@@ -133,6 +140,13 @@ a {
 .footer_text {
   color: #FFFFFF;
 }
+.credit > p {
+  font-size: .75rem;
+  color: #f1f1f1;
+}
+.credit > p > a {
+  color: #f1f1f1;
+}
 /* Modules */
 .grid {
   display: grid;
@@ -147,4 +161,74 @@ a {
 .grid.three_column_grid {
   grid-gap: 1rem;
   grid-template-columns: 31.5% 31.5% 31.5%;
+}
+.grid.four_column_grid {
+  grid-gap: 1rem;
+  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(106, 171, 157, 0.3);
+}
+.modal_container {
+  width: 45%;
+  margin: 10% auto;
+  text-align: left;
+  border: solid 1px #5b616b;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+.modal_header {
+  display: block;
+  margin: -1rem -1rem 1rem;
+  padding: 1rem;
+  border-bottom: solid 2px #5b616b;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #d6d7d9;
+}
+.modal_close {
+  float: right;
+  cursor: pointer;
+}
+.modal_container {
+  padding: 1rem;
+}
+.modal_content_container {
+  display: flex;
+  flex-direction: row;
+}
+.modal_image {
+  height: 250px;
+  padding-right: 1rem;
+}
+.modal_meta {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+}
+.icon_button {
+  text-align: center;
+  width: 150px;
+  border: solid 1px #5b616b;
+  border-radius: 5px;
+  padding: .5rem;
+  background-color: #d2292d;
+}
+.icon_button:hover {
+  transform: translate(-2px, -2px);
+}
+.button_text {
+  margin: 0;
+  color: #FFFFFF;
+}
+.book_icon {
+  vertical-align: text-top;
+  padding-left: .3rem;
 }

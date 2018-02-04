@@ -4,17 +4,18 @@
     {{ partial "sidebar.html" . }}
 
     <div class="page_content">
-      <div class="grid three_column_grid">
-        {{ range .Site.RegularPages }}
+      <div class="grid four_column_grid modal_grid">
+        {{ range (where .Data.Pages "Section" "book") }}
           <div class="card">
             <div class="card_image">
-              <img class="thumbnail" src="/images/{{ .Params.image }}">
-            </div>
-            <div class="card_content">
-              <a class="card_header" href="{{ .Permalink }}">{{ .Params.title }}</a>
-              <div class="card_meta">
-                <p class="card_author">{{ .Params.author }}</p>
+              <div>
+                <a href="#" class="modal_trigger" data-modal="modal_{{ .File.TranslationBaseName }}">
+                  <img class="thumbnail" src="/images/{{ .Params.image }}" alt="cover of {{ .Params.title }}">
+                </a>
               </div>
+
+              {{ partial "modal.html" . }}
+
             </div>
           </div>
         {{ end }}

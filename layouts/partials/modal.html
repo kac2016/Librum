@@ -1,27 +1,30 @@
-<div class="modal">
-  <i class="close_icon"></i>
-  <div class="modal_header">
-    Title
-  </div>
-  <div class="modal_image">
-    <div class="medium_image">
-      <img src="/images/wild.jpg">
-    </div>
-    <div class="modal_description">
-      <div class="modal_subheader">Title</div>
-      <ul>
-        <li>Author</li>
-        <li>Date</li>
-        <li>Host</li>
-      </ul>
-    </div>
-  </div>
-  <div class="actions">
-    <a href="amazon.com" target="_blank">
-      <div class="icon_button">
-        Buy This Book
-        <i class="book_icon"></i>
-      </div>
-    </a>
-  </div>
-</div>
+<div class="modal" id="modal_{{ .File.TranslationBaseName }}">
+  <div class="modal_container">
+    <span class="modal_close">
+      <img src="/images/x-circle.svg" />
+    </span>
+    <h4 class="modal_header">
+      {{ .Params.title }}
+    </h4>
+    <div class="modal_content_container">
+        <img class="modal_image" src="/images/{{ .Params.image }}">
+      <div class="modal_description">
+        <ul class="modal_meta">
+          <li><strong>Author:</strong> {{ .Params.author }}</li>
+          <li><strong>Date:</strong> {{ .Date.Format "Jan 2, 2006" }}</li>
+          <li><strong>Host:</strong> {{ .Params.host }}</li>
+        </ul>
+        <div class="modal_actions">
+          <div class="icon_button">
+            <a href="{{ .Params.buy_link }}" target="_blank">
+              <p class="button_text">
+                Buy This Book
+                <img class="book_icon" src="/images/book-open.svg" />
+              </p>
+            </a>
+          </div> <!-- End icon_button -->
+        </div> <!-- End modal_actions -->
+      </div> <!-- End modal_description -->
+    </div> <!-- End modal_content_container -->
+  </div> <!-- End modal modal_container -->
+</div> <!-- End modal -->
