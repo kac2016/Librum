@@ -1,9 +1,11 @@
 ---
 title: "Wild"
-author: "Cheryl"
+author: "Cheryl Strayed"
 image: "wild.jpg"
-pages: ""
-host: ""
-date: ""
-buy_link: ""
+fiction: false
+tags: [memoir]
+pages: 315
+host: "Cindy"
+date: "2014-10-04"
+buy_link: "http://a.co/13wTyu8"
 ---
