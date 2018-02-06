@@ -1,4 +1,4 @@
-{{ $header_image := .Param "featured_image" | default "images/book_shelf.jpeg" }}
+{{ $header_image := .Param "featured_image" | default "images/book_shelf.jpeg" | absURL  }}
 
 <header class="primary_header" style="background-image: url('{{ $header_image }}');">
   <div class="title_container">

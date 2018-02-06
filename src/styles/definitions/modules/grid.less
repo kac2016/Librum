@@ -5,17 +5,34 @@
   align-items: center;
   align-content: center;
 
+  &.book_list_grid {
+    grid-gap: 1rem;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+
+    @media screen and (min-width: 900px) and (max-width: 1200px) {
+      grid-template-columns: 31.5% 31.5% 31.5%;
+    }
+
+    @media screen and (min-width: 400px) and (max-width: 900px) {
+      grid-template-columns: 49.7% 49.7%;
+    }
+
+    @media screen and (max-width: 400px) {
+      grid-template-columns: 95%;
+    }
+  }
+
   &.two_column_grid {
-    grid-template-columns: 50% 50%
+    grid-template-columns: 49.7% 49.7%;
   }
 
   &.three_column_grid {
     grid-gap: 1rem;
-    grid-template-columns: 31.5% 31.5% 31.5%
+    grid-template-columns: 31.5% 31.5% 31.5%;
   }
 
   &.four_column_grid {
     grid-gap: 1rem;
-    grid-template-columns: 23.5% 23.5% 23.5% 23.5%
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
   }
 }
