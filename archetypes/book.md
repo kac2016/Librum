@@ -2,8 +2,8 @@
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 author: ""
 image: ""
-pages: ""
-fiction: false
+pages:
+fiction:
 tags: []
 host: ""
 date: ""
