@@ -1,0 +1,7 @@
+<div class="category_list">
+  <ul>
+    {{ range .Pages}}
+      <li><a href="{{ .URL }}">{{ .Params.tags }}</a></li>
+    {{ end }}
+  </ul>
+</div>

@@ -1,9 +1,14 @@
 {{ define "main" }}
+<div class="content full">
 
-<h1>{{ .Title }}</h1>
+  <div class="page_content full">
+    <h1>{{ .Title }}</h1>
 
-{{ range .Pages }}
-  <p>{{ .Title }} | {{ .Date.Format "Jan 2, 2006" }} </p>
-{{ end }}
+    {{ range .Pages }}
+      <p>{{ .Title }} | {{ .Date.Format "Jan 2, 2006" }} </p>
+    {{ end }}
+
+  </div>
+</div>
 
 {{ end }}

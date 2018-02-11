@@ -21,7 +21,7 @@
   "scripts": {
     "build_css": "lessc src/styles/style.less static/dist/main.css"
   },
-  "dependencies": {
+  "devDependencies": {
     "less": "^2.7.3"
   }
 }
